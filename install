@@ -1,0 +1,5 @@
+#!/bin/bash
+binfolder=/usr/local/bin
+mkdir -p $binfolder
+chmod 755 git-*
+cp -f git-* $binfolder
