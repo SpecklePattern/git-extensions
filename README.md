@@ -37,9 +37,10 @@ This package is made and tested on CentOS8, but git commands are rather universa
 ```
 git-author "Firstname Lastname" "firstname.lastname@example.com"
 ```
-## git-commit-all
+## git-commit
+Automatically adds and commits all files in the repository.
 ```
-git-commit-all "Commit message here"
+git-commit "Commit message here"
 ```
 ## git-push
 Push commands using branch and origin names

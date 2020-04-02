@@ -1,0 +1,17 @@
+#!/bin/bash
+if [ "$1" = "--README" ]
+then
+	echo 'Automatically adds and commits all files in the repository.'
+	echo '```'
+	echo 'git-commit "Commit message here"'
+	echo '```'
+else
+	if [ -z "$1" ]
+	then
+		echo ' '
+		echo 'Usage example : git-commit "Commit message here"'
+		echo ' '
+	else
+		git add -A && git commit -a -m "$1"
+	fi
+fi
