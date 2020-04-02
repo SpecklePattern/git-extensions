@@ -2,6 +2,7 @@
 
 if [ "$1" == '--README' ]
 then
+	echo 'Push commands using branch and origin names'
 	echo '```'
 	echo 'git-push master'
 	echo 'git-push master origin'
@@ -12,6 +13,7 @@ else
 		echo ' '
 		echo 'Usage example : git-push <branch name> <origin name>'
 		echo 'Usage example : git-push <branch name>'
+		echo 'Default usage example : git-push master'
 		echo ' '
 	else
 		if [ -z "$2" ]
