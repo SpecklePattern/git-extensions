@@ -59,9 +59,11 @@ Simplest way to create a reposity is through the web service.
 4. **GitHub web page** : Fill the Repository Name. Use name you desire for testing purposes
 5. **GitHub web page** : Click "Create Repository"
 6. **Your computer** : Create a new folder and run the following command
+
 ```
-git-net URL
+git-new URL
 ```
+
 	* The URL is your new repository url. Formatted similarly to https://github.com/SpecklePattern/git-simple
 7. **Your computer** :After this, you can, for example, insert a new file inside your test folder
 	* It is important to note, that git tracks changes. So, if you are not changing anything in your folder, git is not doing anything. Go ahead, try putting a random cat picture inside your folder and then continue these instructions.
