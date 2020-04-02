@@ -42,7 +42,7 @@ git-author "Firstname Lastname" "firstname.lastname@example.com"
 git-commit-all "Commit message here"
 ```
 ## git-push
-git-push <branch name> <origin name>
+Push commands using branch and origin names
 ```
 git-push master
 git-push master origin
