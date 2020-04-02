@@ -1,0 +1,13 @@
+#!/bin/bash
+readmefile=README.md
+basetext=$(cat README-base)
+echo "$basetext" > $readmefile
+
+for file in ./git-*
+do
+    if [[ -f $file ]]; then
+        output=$($file)
+	echo "## $file" >> $readmefile
+	echo "$output" >> $readmefile
+    fi
+done

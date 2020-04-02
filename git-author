@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -z "$1" ] || [ -z "$2" ]
+if [ -z "$1" ] | [ -z "$2" ]
 then
 	echo ' '
 	echo 'Usage example : git-author "Firstname Lastname" "firstname.lastname@example.com"'
