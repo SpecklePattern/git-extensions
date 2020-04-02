@@ -98,3 +98,10 @@ Push commands using branch and origin names
 git-push master
 git-push master origin
 ```
+## linux/git-usercache
+Enables user name and password saving so that one doesn't need to input username and password on each push.
+Default timeout is 2 hours (7200 seconds), but user can define own timeout.
+```
+git-usercache 3600
+git-usercache 7200
+```

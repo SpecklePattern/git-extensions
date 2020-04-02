@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$1" == '--README' ]
+then
+	echo "Enables user name and password saving so that one doesn't need to input username and password on each push."
+	echo 'Default timeout is 2 hours (7200 seconds), but user can define own timeout.'
+	echo '```'
+	echo 'git-usercache 3600'
+	echo 'git-usercache 7200'
+	echo '```'
+else
+	timeout=$1
+	
+	if [ -z "$1" ]
+	then
+		timeout=7200
+	fi
+
+	git config --global credential.helper cache
+	git config --global credential.helper "cache --timeout=$timeout"
+fi
