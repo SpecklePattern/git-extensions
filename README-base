@@ -6,10 +6,11 @@ This project provides the absolute minimal scripts to work with git on command l
 
 * Git installed on your machine
 * A git account (GitHub, Bitbucket, etc.)
+* Linux
 
 # Installing
 
-Requires sudo privileges.
+Requires administration privileges.
 
 Create a new folder (folder name is not important) and execute the following commands.
 
@@ -17,14 +18,16 @@ Create a new folder (folder name is not important) and execute the following com
 
 ```
 git clone https://github.com/SpecklePattern/git-simple
-cd git-simple
+cd git-simple/linux
 chmod 755 install
 sudo ./install
 ```
 
-## On Windows (untested)
+## On Windows (unsupported)
 
-## On Mac (untested)
+## On Mac (unsupported)
+
+[Help wanted]
 
 # Real world example
 

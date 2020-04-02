@@ -6,10 +6,11 @@ This project provides the absolute minimal scripts to work with git on command l
 
 * Git installed on your machine
 * A git account (GitHub, Bitbucket, etc.)
+* Linux
 
 # Installing
 
-Requires sudo privileges.
+Requires administration privileges.
 
 Create a new folder (folder name is not important) and execute the following commands.
 
@@ -17,14 +18,16 @@ Create a new folder (folder name is not important) and execute the following com
 
 ```
 git clone https://github.com/SpecklePattern/git-simple
-cd git-simple
+cd git-simple/linux
 chmod 755 install
 sudo ./install
 ```
 
-## On Windows (untested)
+## On Windows (unsupported)
 
-## On Mac (untested)
+## On Mac (unsupported)
+
+[Help wanted]
 
 # Real world example
 
@@ -75,16 +78,18 @@ This package is made and tested on CentOS8, but git commands are rather universa
 * All git-* scripts should include option '--README' as a special case option for generating the README
 
 # Command reference
-## git-author
+## linux/git-author
 ```
 git-author "Firstname Lastname" "firstname.lastname@example.com"
 ```
-## git-commit
+## linux/git-commit
 Automatically adds and commits all files in the repository.
 ```
 git-commit "Commit message here"
 ```
-## git-push
+## linux/git-new
+
+## linux/git-push
 Push commands using branch and origin names
 ```
 git-push master

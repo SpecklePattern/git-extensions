@@ -3,11 +3,23 @@ readmefile=README.md
 basetext=$(cat README-base)
 echo "$basetext" > $readmefile
 
-for file in git-*
+# All references
+for file in linux/git-*
 do
     if [[ -f $file ]]; then
         output="$($file '--README')"
+	somefile=$file
 	echo "## $file" >> $readmefile
 	echo "$output" >> $readmefile
     fi
 done
+
+# Testing install
+if [ -z "$somefile" ]
+then
+	echo "# Testing installation" >> $readmefile
+	echo "## Command" >> $readmefile
+	echo "$somefile" >> $readmefile
+	echo "## Expected output" >> $readmefile
+	echo "$($somefile)" >> $readmefile
+fi
