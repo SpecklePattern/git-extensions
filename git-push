@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ -z "$1" ]
+then
+	echo ' '
+	echo 'Usage example : git-push <branch name> <origin name>'
+	echo 'Usage example : git-push master'
+	echo 'Usage example : git-push master origin'
+	echo ' '
+else
+	if [ -z "$2" ]
+	then
+		git push origin $1
+	else
+		git push $2 $1
+	fi
+fi
