@@ -79,6 +79,7 @@ This package is made and tested on CentOS8, but git commands are rather universa
 
 # Command reference
 ## linux/git-author
+Set git author name and email. Generally only required once after the git is installed.
 ```
 git-author "Firstname Lastname" "firstname.lastname@example.com"
 ```
@@ -101,7 +102,9 @@ git-push master origin
 ## linux/git-usercache
 Enables user name and password saving so that one doesn't need to input username and password on each push.
 Default timeout is 2 hours (7200 seconds), but user can define own timeout.
+Following examples are for 2 minutes (120 seconds) and 1 hour (3600 seconds) saving times.
 ```
+git-usercache 120
 git-usercache 3600
-git-usercache 7200
 ```
+After the set time, user needs to reinput their credentials.

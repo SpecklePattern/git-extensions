@@ -1,6 +1,7 @@
 #!/bin/bash
 if [ "$1" = "--README" ]
 then
+	echo 'Set git author name and email. Generally only required once after the git is installed.'
 	echo '```'
 	echo 'git-author "Firstname Lastname" "firstname.lastname@example.com"'
 	echo '```'

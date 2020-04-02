@@ -4,10 +4,12 @@ if [ "$1" == '--README' ]
 then
 	echo "Enables user name and password saving so that one doesn't need to input username and password on each push."
 	echo 'Default timeout is 2 hours (7200 seconds), but user can define own timeout.'
+	echo 'Following examples are for 2 minutes (120 seconds) and 1 hour (3600 seconds) saving times.'
 	echo '```'
+	echo 'git-usercache 120'
 	echo 'git-usercache 3600'
-	echo 'git-usercache 7200'
 	echo '```'
+	echo 'After the set time, user needs to reinput their credentials.'
 else
 	timeout=$1
 	
