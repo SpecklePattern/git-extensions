@@ -8,8 +8,9 @@ for file in linux/git-*
 do
     if [[ -f $file ]]; then
         output="$($file '--README')"
-	somefile=$file
-	echo "## $file" >> $readmefile
+	somefile="$file"
+	somefile=${somefile:2}
+	echo "## $somefile" >> $readmefile
 	echo "$output" >> $readmefile
     fi
 done

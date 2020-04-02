@@ -82,33 +82,33 @@ This package is made and tested on CentOS8, but git commands are rather universa
 * All git-* scripts should include option '--README' as a special case option for generating the README
 
 # Command reference
-## linux/git-author
+## nux/git-author
 Set git author name and email. Generally only required once after the git is installed.
 ```
 git-author "Firstname Lastname" "firstname.lastname@example.com"
 ```
-## linux/git-commit
+## nux/git-commit
 Automatically adds and commits all files in the repository.
 ```
 git-commit "Commit message here"
 ```
-## linux/git-new
+## nux/git-new
 Create new repository using single command.
 ```
 git-new https://github.com/USERNAME/REPOSITORYNAME
 ```
-## linux/git-push
+## nux/git-push
 Push commands using branch and origin names
 ```
 git-push master
 git-push master origin
 ```
-## linux/git-simple
+## nux/git-simple
 Tests if the installation was a success.
 ```
 git-simple
 ```
-## linux/git-usercache
+## nux/git-usercache
 Enables user name and password saving so that one doesn't need to input username and password on each push.
 Default timeout is 2 hours (7200 seconds), but user can define own timeout.
 Following examples are for 2 minutes (120 seconds) and 1 hour (3600 seconds) saving times.
