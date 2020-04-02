@@ -88,7 +88,10 @@ Automatically adds and commits all files in the repository.
 git-commit "Commit message here"
 ```
 ## linux/git-new
-
+Create new repository using single command.
+```
+git-new https://github.com/USERNAME/REPOSITORYNAME
+```
 ## linux/git-push
 Push commands using branch and origin names
 ```

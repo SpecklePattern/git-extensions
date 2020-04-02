@@ -1,2 +1,24 @@
 #!/bin/bash
 
+if [ "$1" == '--README' ]
+then
+	echo 'Create new repository using single command.'
+	echo '```'
+	echo 'git-new https://github.com/USERNAME/REPOSITORYNAME'
+	echo '```'
+else
+	if [ -z "$1"]
+	then
+		echo ' '
+		echo 'Usage example : git-new https://github.com/SpecklePattern/git-simple'
+		echo 'USE THE URL OF YOUR OWN REPOSITORY'
+		echo ' '
+	else
+		echo "# New repository" >> README.md
+		git init
+		git add README.md
+		git commit -m "First commit"
+		git remote add origin $1
+		git push -u origin master
+	fi
+fi
