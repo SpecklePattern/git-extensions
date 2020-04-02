@@ -2,7 +2,7 @@
 
 echo "$1"
 
-if [ $1 == "--README" ]
+if [ "$1" == '--README' ]
 then
 	echo 'git-push <branch name> <origin name>'
 	echo '```'
