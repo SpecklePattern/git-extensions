@@ -9,7 +9,7 @@ do
     if [[ -f $file ]]; then
         output="$($file '--README')"
 	somefile="$file"
-	somefile=${somefile:2}
+	somefile=${somefile:6}
 	echo "## $somefile" >> $readmefile
 	echo "$output" >> $readmefile
     fi
