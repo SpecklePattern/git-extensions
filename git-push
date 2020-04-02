@@ -1,16 +1,24 @@
 #!/bin/bash
-if [ -z "$1" ]
+if [ "$1" == "--README" ]
 then
-	echo ' '
-	echo 'Usage example : git-push <branch name> <origin name>'
-	echo 'Usage example : git-push master'
-	echo 'Usage example : git-push master origin'
-	echo ' '
+	echo 'git-push <branch name> <origin name>'
+	echo '```'
+	echo 'git-push master'
+	echo 'git-push master origin'
+	echo '```'
 else
-	if [ -z "$2" ]
+	if [ -z "$1" ]
 	then
-		git push origin $1
+		echo ' '
+		echo 'Usage example : git-push <branch name> <origin name>'
+		echo 'Usage example : git-push <branch name>'
+		echo ' '
 	else
-		git push $2 $1
+		if [ -z "$2" ]
+		then
+			git push origin $1
+		else
+			git push $2 $1
+		fi
 	fi
 fi

@@ -33,16 +33,6 @@ All the script files should be named starting with 'git-' for compatibility.
 
 # Command reference
 ## git-author
- 
-Usage example : git-author "Firstname Lastname" "firstname.lastname@example.com"
- 
-## git-commit-all
- 
-Usage example : git-commit-all "Commit message here"
- 
-## git-push
- 
-Usage example : git-push <branch name> <origin name>
-Usage example : git-push master
-Usage example : git-push master origin
- 
+```
+git-author "Firstname Lastname" "firstname.lastname@example.com"
+```

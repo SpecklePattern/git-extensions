@@ -1,9 +1,16 @@
 #!/bin/bash
-if [ -z "$1" ]
+if [ "$1" == "--README" ]
 then
-	echo ' '
-	echo 'Usage example : git-commit-all "Commit message here"'
-	echo ' '
+	echo '```'
+	echo 'git-commit-all "Commit message here"'
+	echo '```'
 else
-	git add -A && git commit -a -m "$1"
+	if [ -z "$1" ]
+	then
+		echo ' '
+		echo 'Usage example : git-commit-all "Commit message here"'
+		echo ' '
+	else
+		git add -A && git commit -a -m "$1"
+	fi
 fi
