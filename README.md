@@ -16,8 +16,8 @@ Create a new folder (folder name is not important) and execute the following com
 ## On Linux
 
 ```
-git clone https://github.com/SpecklePattern/git-extensions
-cd git-extensions
+git clone https://github.com/SpecklePattern/git-simple
+cd git-simple
 chmod 755 install
 sudo ./install
 ```
