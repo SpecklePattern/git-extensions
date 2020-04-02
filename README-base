@@ -7,11 +7,13 @@ This project provides the absolute minimal scripts to work with git on command l
 * Git installed on your machine
 * A git account (GitHub, Bitbucket, etc.)
 
-## Installing
+# Installing
 
 Requires sudo privileges.
 
-Create a new folder (folder name is not important) and execute the following commands 
+Create a new folder (folder name is not important) and execute the following commands.
+
+## On Linux
 
 ```
 git clone https://github.com/SpecklePattern/git-extensions
@@ -20,15 +22,17 @@ chmod 755 install
 sudo ./install
 ```
 
-This will make all of the extension commands (see Command reference) available.
+## On Windows (untested)
 
-## Working with a git repository
+## On Mac (untested)
+
+# Real world example
 
 Here we will cover the basic usage of these simple extensions on a real git repository.
 
 Simplest way to create a reposity is through the web service.
 
-### Github
+## Using Github account
 
 1. **GitHub web page** : Go to your account
 2. **GitHub web page** : On the frontpage you see the "Repositories" tab. Click on that.
@@ -48,6 +52,8 @@ git-push master
 10. **GitHub web page** : The git-push command requires authentication, but after this, you should see your file changes in GitHub web page
 
 Congrats! You are now tracking changes in your computer folder! For more advanced usage of git, there are numerous tutorials for that.
+
+# Issues and solving them
 
 ## 'git' command is not working
 
