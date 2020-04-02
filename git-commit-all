@@ -2,11 +2,8 @@
 if [ -z "$1" ]
 then
 	echo ' '
-	echo 'ERROR'
 	echo 'Usage example : git-commit-all "Commit message here"'
-	echo 'You need to comment your commit. No changes made ...'
 	echo ' '
 else
-	echo $1
 	git add -A && git commit -a -m "$1"
 fi
