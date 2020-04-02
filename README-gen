@@ -6,7 +6,7 @@ echo "$basetext" > $readmefile
 for file in git-*
 do
     if [[ -f $file ]]; then
-        output="$($file "--README")"
+        output="$($file '--README')"
 	echo "## $file" >> $readmefile
 	echo "$output" >> $readmefile
     fi
