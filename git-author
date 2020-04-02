@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$1" == "--README" ]
+if [ "$1" = "--README" ]
 then
 	echo '```'
 	echo 'git-author "Firstname Lastname" "firstname.lastname@example.com"'
