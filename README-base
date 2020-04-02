@@ -29,7 +29,8 @@ To use git, you need to install the packages this is dependent on the platform (
 
 This package is made and tested on CentOS8, but git commands are rather universal. Developers are encouraged to make system-based changes when necessary.
 
-All the script files should be named starting with 'git-' for compatibility.
+* All the script files should be named starting with 'git-' for compatibility.
+* All git-* scripts should include option '--README' as a special case option for generating the README
 
 # Command reference
 
