@@ -3,7 +3,7 @@ readmefile=README.md
 basetext=$(cat README-base)
 echo "$basetext" > $readmefile
 
-for file in ./git-*
+for file in git-*
 do
     if [[ -f $file ]]; then
         output=$($file)

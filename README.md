@@ -32,15 +32,15 @@ This package is made and tested on CentOS8, but git commands are rather universa
 All the script files should be named starting with 'git-' for compatibility.
 
 # Command reference
-## ./git-author
+## git-author
  
 Usage example : git-author "Firstname Lastname" "firstname.lastname@example.com"
  
-## ./git-commit-all
+## git-commit-all
  
 Usage example : git-commit-all "Commit message here"
  
-## ./git-push
+## git-push
  
 Usage example : git-push <branch name> <origin name>
 Usage example : git-push master
