@@ -13,13 +13,3 @@ do
 	echo "$output" >> $readmefile
     fi
 done
-
-# Testing install
-if [ -z "$somefile" ]
-then
-	echo "# Testing installation" >> $readmefile
-	echo "## Command" >> $readmefile
-	echo "$somefile" >> $readmefile
-	echo "## Expected output" >> $readmefile
-	echo "$($somefile)" >> $readmefile
-fi

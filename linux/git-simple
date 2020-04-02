@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$1" == '--README' ]
+then
+	echo 'Tests if the installation was a success.'
+	echo '```'
+	echo 'git-simple'
+	echo '```'
+else
+	echo "Commands installed correctly."
+	echo "See https://github.com/SpecklePattern/git-simple for more information"
+fi
+
+

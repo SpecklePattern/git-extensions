@@ -29,34 +29,9 @@ sudo ./install
 
 [Help wanted]
 
-# Real world example
-
-Here we will cover the basic usage of these simple extensions on a real git repository.
-
-Simplest way to create a reposity is through the web service.
-
-## Using Github account
-
-1. **GitHub web page** : Go to your account
-2. **GitHub web page** : On the frontpage you see the "Repositories" tab. Click on that.
-3. **GitHub web page** : Then you should see the green "New" button. This will allow you to create a new git repository
-4. **GitHub web page** : Fill the Repository Name. Use name "git-simple-test" to test and follow these instructions
-5. **GitHub web page** : Click "Create Repository"
-6. **GitHub web page** : Now you can see the instructions to initialize the repository on your machine
-	* If you just followed these instructions, you should follow the commands that include the command "git init"
-7. **Your computer** :  Remember to create a new folder for the test project on your machine and follow the instructions on the GitHub web page.
-8. **Your computer** :After this, you can, for example, insert a new file inside your test folder
-	* It is important to note, that git follows changes. So, if you are not changing anything in your folder, git is not doing anything. Go ahead, try putting a random cat picture inside your folder and then continue these instructions.
-9. **Your computer** : After changing or adding any files in your git folder you can call commands
-```
-git-commit "My comment"
-git-push master
-```
-10. **GitHub web page** : The git-push command requires authentication, but after this, you should see your file changes in GitHub web page
-
-Congrats! You are now tracking changes in your computer folder! For more advanced usage of git, there are numerous tutorials for that.
-
 # Issues and solving them
+
+## Testing if installation worker
 
 ## 'git' command is not working
 
@@ -69,6 +44,35 @@ To use git, you need to install the packages this is dependent on the platform (
 ## Authorization fails during git-push command
 
 You need to provide correct username and password. Remember, you are not using your email as username.
+
+# A real world example
+
+Here we will cover the basic usage of these simple extensions on a real git repository.
+
+Simplest way to create a reposity is through the web service.
+
+## Using Github account
+
+1. **GitHub web page** : Go to your account
+2. **GitHub web page** : On the frontpage you see the "Repositories" tab. Click on that.
+3. **GitHub web page** : Then you should see the green "New" button. This will allow you to create a new git repository
+4. **GitHub web page** : Fill the Repository Name. Use name you desire for testing purposes
+5. **GitHub web page** : Click "Create Repository"
+6. **Your computer** : Create a new folder and run the following command
+```
+git-net URL
+```
+	* The URL is your new repository url. Formatted similarly to https://github.com/SpecklePattern/git-simple
+7. **Your computer** :After this, you can, for example, insert a new file inside your test folder
+	* It is important to note, that git tracks changes. So, if you are not changing anything in your folder, git is not doing anything. Go ahead, try putting a random cat picture inside your folder and then continue these instructions.
+8. **Your computer** : After changing or adding any files in your folder you can call commands
+```
+git-commit "My comment"
+git-push master
+```
+9. **GitHub web page** : The git-push command requires authentication, but after this, you should see your file changes in GitHub web page
+
+Congrats! You are now tracking changes in your computer folder! For more advanced usage of git, there are numerous tutorials for that.
 
 # Development
 
@@ -98,6 +102,11 @@ Push commands using branch and origin names
 ```
 git-push master
 git-push master origin
+```
+## linux/git-simple
+Tests if the installation was a success.
+```
+git-simple
 ```
 ## linux/git-usercache
 Enables user name and password saving so that one doesn't need to input username and password on each push.
