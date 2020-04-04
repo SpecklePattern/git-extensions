@@ -4,7 +4,7 @@ This project provides the absolute minimal scripts to work with git on command l
 
 ## Requirements
 
-* [Git installed on your machine](https://git-scm.com/downloads)
+* Git installed on your machine
 * A git account (GitHub, Bitbucket, etc.)
 * Linux **or** Windows
 
@@ -65,7 +65,9 @@ git-simple
 
 To use git, you need to install the packages this is dependent on the platform (operating system) you are using.
 
-* [Download Git](https://git-scm.com/downloads)
+* [Windows](https://www.google.com/search?q=Windows+install+git)
+* [Linux](https://www.google.com/search?q=linux+install+git)
+* [Mac](https://www.google.com/search?q=Mac+install+git)
 
 ## Authorization fails during git-push command
 
@@ -94,11 +96,14 @@ The URL is your new repository url. Formatted similarly to https://github.com/Sp
 
 7. **Your computer** :After this, you can, for example, insert a new file inside your test folder
 	* It is important to note, that git tracks changes. So, if you are not changing anything in your folder, git is not doing anything. Go ahead, try putting a random cat picture inside your folder and then continue these instructions.
+
 8. **Your computer** : After changing or adding any files in your folder you can call commands
+
 ```
 git-commit "My comment"
 git-push master
 ```
+
 9. **GitHub web page** : The git-push command requires authentication, but after this, you should see your file changes in GitHub web page
 
 Congrats! You are now tracking changes in your computer folder! For more advanced usage of git, there are numerous tutorials for that.
@@ -108,7 +113,7 @@ Congrats! You are now tracking changes in your computer folder! For more advance
 This package is made and tested on CentOS8, but git commands are rather universal. Developers are encouraged to make system-based changes when necessary.
 
 * All the script files should be named starting with 'git-' for compatibility.
-* All git-* scripts should include option '--README' as a special case option for generating the README
+* All git-* scripts in linux/ folder should include option '--README' as a special case option for generating the README
 
 # Command reference
 ## git-author
