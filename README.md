@@ -4,9 +4,9 @@ This project provides the absolute minimal scripts to work with git on command l
 
 ## Requirements
 
-* Git installed on your machine
+* [Git installed on your machine](https://git-scm.com/downloads)
 * A git account (GitHub, Bitbucket, etc.)
-* Linux
+* Linux **or** Windows
 
 # Installing
 
@@ -23,7 +23,19 @@ chmod 755 install
 sudo ./install
 ```
 
-## On Windows (unsupported)
+## On Windows
+
+In file explorer: In any folder. Right-click and select "Git Bash Here". Then run 
+
+```
+git clone https://github.com/SpecklePattern/git-simple
+```
+
+Now, open the folder in file explorer.
+
+* Go to folder git-simple/windows
+* Right-click on the *install-git-simple.bat* and
+* select "Run as administrator"
 
 ## On Mac (unsupported)
 
@@ -37,9 +49,7 @@ sudo ./install
 
 To use git, you need to install the packages this is dependent on the platform (operating system) you are using.
 
-* [Windows](https://www.google.com/search?q=Windows+install+git)
-* [Linux](https://www.google.com/search?q=linux+install+git)
-* [Mac](https://www.google.com/search?q=Mac+install+git)
+* [Download Git](https://git-scm.com/downloads)
 
 ## Authorization fails during git-push command
 
