@@ -53,7 +53,13 @@ git-author "My name" "myemail@example.com"
 
 with your own information. This sets the git enviroment author to correct one.
 
-## Testing if installation worker
+## Verify installation
+
+Run in Linux terminal **or** Windows Git Bash
+
+```
+git-simple
+```
 
 ## 'git' command is not working
 

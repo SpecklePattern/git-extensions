@@ -6,7 +6,7 @@ This project provides the absolute minimal scripts to work with git on command l
 
 * Git installed on your machine
 * A git account (GitHub, Bitbucket, etc.)
-* Linux
+* Linux **or** Windows
 
 # Installing
 
@@ -23,7 +23,19 @@ chmod 755 install
 sudo ./install
 ```
 
-## On Windows (unsupported)
+## On Windows
+
+In file explorer: In any folder. Right-click and select "Git Bash Here". Then run 
+
+```
+git clone https://github.com/SpecklePattern/git-simple
+```
+
+Now, open the folder in file explorer.
+
+* Go to folder git-simple/windows
+* Right-click on the *install-git-simple.bat* and
+* select "Run as administrator"
 
 ## On Mac (unsupported)
 
@@ -31,7 +43,23 @@ sudo ./install
 
 # Issues and solving them
 
-## Testing if installation worker
+## Recommended to do
+
+After install it is recommended to run
+
+```
+git-author "My name" "myemail@example.com"
+```
+
+with your own information. This sets the git enviroment author to correct one.
+
+## Verify installation
+
+Run in Linux terminal **or** Windows Git Bash
+
+```
+git-simple
+```
 
 ## 'git' command is not working
 
