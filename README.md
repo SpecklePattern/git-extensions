@@ -43,6 +43,16 @@ Now, open the folder in file explorer.
 
 # Issues and solving them
 
+## Recommended to do
+
+After install it is recommended to run
+
+```
+git-author "My name" "myemail@example.com"
+```
+
+with your own information. This sets the git enviroment author to correct one.
+
 ## Testing if installation worker
 
 ## 'git' command is not working
