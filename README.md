@@ -2,6 +2,8 @@
 
 This project provides the absolute minimal scripts to work with git on command line. The aim is to simplify the git commands for simple git projects.
 
+Especially usefull for single person small repositories and testing.
+
 ## Requirements
 
 * Git installed on your machine
@@ -41,9 +43,7 @@ Now, open the folder in file explorer.
 
 [Help wanted]
 
-# Issues and solving them
-
-## Recommended to do
+# Recommended to do after an install
 
 After install it is recommended to run
 
@@ -52,6 +52,8 @@ git-author "My name" "myemail@example.com"
 ```
 
 with your own information. This sets the git enviroment author to correct one.
+
+# Issues and solving them
 
 ## Verify installation
 
