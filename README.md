@@ -1,3 +1,4 @@
+# -- DEMO PROJECT --
 # Simple git tools to start working with git
 
 This project provides the absolute minimal scripts to work with git on command line. The aim is to simplify the git commands for simple git projects.
